@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Examen.MainPage">
+
+    <Grid BackgroundColor="PeachPuff">
+
+        <Grid Grid.Row="0" Margin="5">
+            <StackLayout  Orientation="Vertical" 
+                      HorizontalOptions="StartAndExpand" 
+                      Margin="50,15" 
+                      VerticalOptions="StartAndExpand">
+
+                <Label Text="APLICACIONES MOVILES XAMARI" 
+                       HorizontalTextAlignment="Center"
+                       
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="CenterAndExpand" 
+                       FontAttributes="Bold"
+                       FontFamily="Lobster-Regular"
+                       FontSize="20"/>
+
+                <Label Text="Seleccione la respuesta correcta"
+                       TextColor="green"
+                       HorizontalOptions="Center"
+                       VerticalOptions="CenterAndExpand"
+                       FontAttributes="Italic,Bold"
+                       FontSize="14"/>
+
+                <Label x:Name="lblpreguntita" 
+                       Text="1. Qué es un RecyclerView en el desarrollo de aplicaciones XAMARI." 
+                       HorizontalTextAlignment="Center"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="CenterAndExpand"
+                       FontSize="12"/>
+
+            </StackLayout>
+            
+            <StackLayout Margin="20, 160,30,20">
+                <Button Text="Una vista que muestra una lista de elementos en una disposición de cuadrícula" 
+                    TextColor="White"
+                    BackgroundColor="Gray"
+                    BorderColor="orange"
+                    BorderWidth="3"
+                    CornerRadius="10"
+                        x:Name="btn1"
+                        Clicked="btnresp1_Clicked"
+                     />
+
+                <Button Text="Un componente que permite la reproducción de archivos de audio y video" 
+                    TextColor="White"
+                    BackgroundColor="Gray"
+                    BorderColor="Orange"
+                    BorderWidth="3"
+                    CornerRadius="10"
+                    x:Name="btn2"
+                    Clicked="btnresp2_Clicked"
+                     />
+
+                <Button Text="Un objeto utilizado para almacenar y administrar datos de manera persistente" 
+                    TextColor="White"
+                    BackgroundColor="Gray"
+                    BorderColor="Orange"
+                    BorderWidth="3"
+                    CornerRadius="10"
+                    x:Name="btn3"  
+                        Clicked="btn3_Clicked"/>
+
+                <Button Text="Un contenedor de vista más eficiente y flexible para mostrar grandes conjuntos de datos en una lista desplazable" 
+                    TextColor="White"
+                    BackgroundColor="Gray"
+                    BorderColor="Orange"
+                    BorderWidth="3"
+                    CornerRadius="10"
+                    x:Name="btn4"
+                    Clicked="btn4_Clicked"/>
+
+               
+                <StackLayout>
+                    <Grid Margin="0,30,0,0">
+                        <Button Text="Mostrar Puntuación Final" 
+                    TextColor="White"
+                    BackgroundColor="Gray"
+                    BorderColor="Orange"
+                    BorderWidth="5"
+                    CornerRadius="60"
+                    x:Name="btnPuntuacion"
+                     Clicked="mostrarAlerta"
+                    IsVisible="True"/>
+                        
+                    </Grid>
+                </StackLayout>
+                <Button Text="Salir"
+                    TextTransform="None"
+                    BackgroundColor="White"
+                    TextColor="Black"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    CornerRadius="10"
+                    x:Name="btnsalir"
+                    Clicked="btnsalir_Clicked"/>
+                
+                <Label Text="Quiz de 5 preguntas" 
+                       x:Name="lblpuntuacion"
+                       TextColor="White"
+                       HorizontalOptions="EndAndExpand"
+                       VerticalOptions="EndAndExpand" 
+                       FontAttributes="Bold"
+                       FontFamily="Lobster-Regular"
+                       FontSize="14"/>
+                
+
+            </StackLayout>
+
+        </Grid>
+
+
+    </Grid>
+
+</ContentPage>
